@@ -1,0 +1,47 @@
+.footer {
+  background-color: #2c2c2c; /* gris oscuro elegante */
+  color: #e0e0e0;           /* gris claro para contraste */
+  padding: 1.5rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copy {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  color: #b0b0b0; /* gris medio, menos intenso */
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.links a {
+  color: #d9d9d9;           /* gris claro para links */
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #4caf50; /* verde acento estilo Balanz */
+}
+
+/* responsive para pantallas medianas */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+  .copy {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,78 @@
+.formContainer {
+  background-color: #2c2c2c; /* gris oscuro sobrio */
+  color: #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  max-width: 400px;
+  margin: 1rem auto;
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #f5f5f5; /* casi blanco */
+}
+
+.formGroup {
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 0.25rem;
+  color: #b0b0b0; /* gris medio */
+}
+
+.input,
+.textarea {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #3d3d3d;
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+}
+
+.textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.botonGuardar {
+  flex: 1;
+  background-color: #4caf50; /* verde acento sobrio */
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.botonGuardar:hover {
+  background-color: #43a047; /* verde más oscuro */
+}
+
+.botonCancelar {
+  flex: 1;
+  background-color: #d9534f; /* rojo menos chillón */
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.botonCancelar:hover {
+  background-color: #c9302c; /* rojo más oscuro */
+}

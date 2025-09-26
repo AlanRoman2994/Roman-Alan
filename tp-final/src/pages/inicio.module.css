@@ -1,0 +1,91 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #2c2c2c; /* gris oscuro sobrio */
+  color: #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.imagen {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.titulo {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: #f5f5f5; /* casi blanco */
+}
+
+.detalle {
+  font-size: 0.75rem;
+  color: #b0b0b0; /* gris medio suave */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* --- Botones --- */
+.botones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.botonEliminar,
+.botonEditar {
+  flex: 1;
+  margin: 0 0.25rem;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Botón Eliminar */
+.botonEliminar {
+  background-color: #d9534f; /* rojo elegante */
+  color: #fff;
+}
+
+.botonEliminar:hover {
+  background-color: #c9302c; /* rojo más oscuro */
+}
+
+/* Botón Editar */
+.botonEditar {
+  background-color: #4caf50; /* verde acento sobrio */
+  color: #fff;
+}
+
+.botonEditar:hover {
+  background-color: #43a047; /* verde más oscuro */
+}

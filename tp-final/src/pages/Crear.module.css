@@ -1,0 +1,76 @@
+.contenedor {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #2c2c2c; /* gris oscuro elegante */
+  color: #e0e0e0;            /* texto claro neutro */
+  border-radius: 0.5rem;
+}
+
+.titulo {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #f5f5f5; /* casi blanco */
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.grupo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.label {
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+  color: #b0b0b0; /* gris medio, suave */
+}
+
+.input,
+.textarea {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #3a3a3a; /* gris medio */
+  color: #f5f5f5;
+  font-size: 1rem;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: 2px solid #4caf50; /* verde acento al hacer focus */
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.boton {
+  background-color: #4caf50; /* verde acento */
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.boton:hover {
+  background-color: #43a047; /* verde más oscuro en hover */
+  transform: translateY(-2px);
+}
+
+.mensaje {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #d9d9d9; /* gris claro */
+}
